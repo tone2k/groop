@@ -1,0 +1,34 @@
+{
+  "maxRounds": 3,
+  "agents": [
+    {
+      "id": "claude",
+      "name": "Claude",
+      "provider": "anthropic",
+      "model": "claude-sonnet-5",
+      "apiKeyEnv": "ANTHROPIC_API_KEY"
+    },
+    {
+      "id": "gpt",
+      "name": "GPT",
+      "provider": "openai-compatible",
+      "model": "gpt-4o",
+      "apiKeyEnv": "OPENAI_API_KEY"
+    },
+    {
+      "id": "llama",
+      "name": "Llama (local)",
+      "provider": "openai-compatible",
+      "model": "llama3.2",
+      "baseUrl": "http://localhost:11434/v1"
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "provider": "openai-compatible",
+      "model": "gemini-2.0-flash",
+      "baseUrl": "https://generativelanguage.googleapis.com/v1beta/openai/",
+      "apiKeyEnv": "GEMINI_API_KEY"
+    }
+  ]
+}
